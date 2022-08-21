@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Bikes | bikekharido.com</title>
+    <script>
+        function saveHtml() {
+            // let data=document.getElementById("textareaCode").value;
+            let subject = document.getElementById("subject").value;
+            let fname = document.getElementById("fname").value;
+            let lname = document.getElementById("lname").value;
+            let country = document.getElementById("country").value;
+            localStorage.setItem("subject", subject);
+            localStorage.setItem("fname", fname);
+            localStorage.setItem("lname", lname);
+            localStorage.setItem("country", country);
+            //alert(data);
+            //data="Champak";
+            //console.log(data);
+            //saveData("html",data);
+
+        }
+        function loadData() {
+            document.getElementById("subject").value = localStorage.getItem("subject");
+            document.getElementById("fname").value = localStorage.getItem("fname");
+            document.getElementById("lname").value = localStorage.getItem("lname");
+            document.getElementById("country").value = localStorage.getItem("country");
+
+        }
+
+    </script>
+
+    <style>
+        .container {
+
+            background-color: burlywood;
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            background-color: darkgray opacity: 50%;
+        }
+
+        #logo {
+            margin: 3px 6px;
+
+        }
+
+        #logo img {
+            height: 40px;
+            margin: 3px 6px;
+
+        }
+
+        #navbar ul {
+            display: flex;
+            font-family: 'Baloo Bhai', cursive;
+        }
+
+        #navbar ul li {
+
+            list-style: none;
+            font-size: 1.3rem;
+        }
+
+        #navbar ul li a {
+            color: white;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+            text-transform: none;
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: white;
+
+        }
+
+        .container-row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border-style: ridge;
+            background-color: whitesmoke;
+            justify-content: space-around;
+            padding: 20px;
+
+        }
+
+        .container-column {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            border-style: ridge;
+            background-color: white;
+            margin: 0px;
+            padding: 20px;
+        }
+
+        img {
+            width: 100%;
+            height: 250px;
+        }
+
+        h6 {
+            font-size: larger;
+            margin: 10px;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+        }
+
+        /* Style the label to display next to the inputs */
+        label {
+            padding: 12px 12px 12px 0;
+            display: flex;
+            flex-wrap: wrap;
+
+
+        }
+
+        /* Style the submit button */
+        input[type=button] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+        /* Style the container */
+        .container2 {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            flex-wrap: wrap;
+
+        }
+
+        /* Floating column for labels: 25% width */
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+
+        /* Floating column for inputs: 75% width */
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+
+            .col-25,
+            .col-75,
+            input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav id="navbar">
+            <div id="logo">
+                <img src="https://image.shutterstock.com/image-vector/word-bike-260nw-454145692.jpg"
+                    alt="onlinekhana.com">
+            </div>
+            <ul>
+                <li class="item"> <a href="a">Home</a> </li>
+                <li class="item"> <a href="a">Service</a> </li>
+                <li class="item"> <a href="a">About Us</a> </li>
+                <li class="item"> <a href="a">Contact Us</a> </li>
+
+            </ul>
+        </nav>
+        <div class="container-column">
+            <h1>BEST ELECTRIC BIKE MODELS</h1>
+            <p>Here is a list of the best electric bikes in India. Check out these top-ranked electric motorcycles and
+                their prices, specifications, features, and more. <br>
+                You can search bikes by applying filters such as by budget, by preferred price, by bodytype, by brand,
+                by engine cc and features. Also stay updated with upcoming motorcycles <br>
+                in India, compare two wheelers in your price range and stay tuned to latest bike news.
+            </p>
+        </div>
+        <div class="container-column">
+            <h1>1.Revolt RV 400</h1>
+            <div class="container-row">
+                <div class="container-row">
+                    <img src="https://images.91wheels.com/news/wp-content/uploads/2021/11/revolt-rv400-vizag-dealership.png"
+                        alt="">
+                </div>
+                <div class="container-column">
+                    <h3>Start @ Rs 1.29 lakh</h3>
+
+                    <h6>Battery Range 150km/Full charge</h6>
+                    <h6>Weight - 108 kg</h6>
+                </div>
+            </div>
+            <div class="container-row">
+                <p>The Revolt RV400 is the first AI-enabled electric motorcycle in the Indian market. The Revolt RV 400
+                    electric <br>
+                    motorcycle is offered in two variants: Standard and premium. <br> It has a muscular design and comes
+                    with lots of
+                    features like side stand sensor, combi brake system, motorcycle sounds, etc. The Revolt RV400 is
+                    powered by a <br>
+                    3.24kWh battery pack that sends power to a 3,000 Watt motor. It has a claimed range of around 85
+                    kilometres in
+                    Sport mode, 100 kilometres in Normal mode and 150 <br> kilometres in Eco mode. It takes around 4.5
+                    hours to charge
+                    up the battery.
+
+                </p>
+            </div>
+        </div>
+        <div class="container-column">
+            <h1>Etryst-350 Model</h1>
+            <div class="container-row">
+                <div class="container-row">
+                    <img src="https://imgd.aeplcdn.com/1280x720/n/cw/ec/124833/etryst-350-right-side-view.jpeg?" alt="">
+                </div>
+                <div class="container-column">
+                    <h3>Start @ Rs 1.54 lakh</h3>
+
+                    <h6>Battery Range 140km/Full charge</h6>
+                    <h6>Weight - 120 kg</h6>
+                </div>
+            </div>
+            <div class="container-row">
+                <p>PURE EV Etryst-350 is an electric street bike available at a starting price of Rs. 1,54,999 in India.
+                    It is available in only 1 <br>
+                    variant and 3 colours.
+                    PURE EV Etryst-350 generates 3000 W power from its motor. PURE EV Etryst-350 comes up with both
+                    front and rear disc <br> brakes.</p>
+            </div>
+        </div>
+        <div class="container-column">
+            <h1>BGauss A2</h1>
+            <div class="container-row">
+                <div class="container-row"> <img
+                        src="https://imgd.aeplcdn.com/1280x720/bw/models/bgauss-a2-lead-acid20201006202636.jpg" alt="">
+                </div>
+                <div class="container-column">
+                    <h3>Start @ Rs 0.52 lakh</h3>
+
+                    <h6>Battery Range 70km/Full charge</h6>
+                    <h6>Weight - 108 kg</h6>
+                </div>
+            </div>
+            <div class="container-row">
+                <p>BGauss A2 is an electric scooter available at a starting price of Rs. 52,499 in India. It is
+                    available in 2 variants and 3 colours <br>
+                    with top variant price starting from Rs. 68,496. BGauss A2 generates 250 W power from its motor.
+                    BGauss A2 comes up with both front and rear disc brakes.<br>
+
+                    Bgauss A2 is a part of the two-product portfolio from the Indian electric scooter brand. The A2
+                    features a modern design that comprises of apron-mounted <br>
+                    headlight, full LED lighting, and a digital instrument cluster.</p>
+            </div>
+            <div class="container2">
+                <form action="action_page.php" id="textareaCode">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">First Name</label>
+                        </div>
+
+                        <div class="col-75">
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lname">Last Name</label>
+
+
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="country">Country</label>
+                        </div>
+                        <div class="col-75">
+                            <input list="countries" name="country" id="country">
+
+                            <datalist id="countries">
+                                <option value="India">
+                                <option value="Israil">
+                                <option value="Indonesia">
+                                <option value="USA">
+                                <option value="UK">
+                            </datalist>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px">
+
+
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="button" value="Submit" onclick="saveHtml()">
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+        <script>
+            loadData();
+        </script>
+</body>
+
+</html>
